@@ -10,7 +10,8 @@ $(function () {
         return false;
     });
 
-    $('.btn_Up, .logo').on('click', function () {
+    $('.logo').on('click', function (e) {
+          e.preventDefault();
         $('body, html').animate({'scrollTop': 0}, 800)
     });
 
