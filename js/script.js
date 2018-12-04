@@ -5,7 +5,7 @@ $(function () {
 
     $(".nav_menu li a").click(function () {
         var elementClick = $(this).attr("href");
-        var destination = $(elementClick).offset().top-50;
+        var destination = $(elementClick).offset().top-20;
         jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
         return false;
     });
@@ -19,7 +19,7 @@ $(function () {
         $('.imgBox img').attr("src", $(this).attr("href"));
         var ptext = $(this).siblings('.img_link').find('p').text();
         $('.imgBox .imgBox_title p').text(ptext);
-        var h4text = $(this).siblings('.img_link').find('h4').text();
+       var h4text = $(this).siblings('.img_link').find('h4').text();
         $('.imgBox .imgBox_title h4').text(h4text);
         var ahref = $(this).siblings('.img_link').find('a').attr("href");
         $('.imgBox .imgBox_title .btn_go').attr("href", ahref);
@@ -37,7 +37,7 @@ $(function () {
     });
 
     $('input:not(input.btn_submit), textarea').on('focus', function () {
-        $(this).attr("placeholder", "");
+            $(this).attr("placeholder", "");
     });
 
     $(window).scroll(function () {
@@ -50,11 +50,11 @@ $(function () {
         }
 
         var st = $(window).scrollTop();
-        $('.banner_img').css('transform', 'translate(0%, '+ st * 0.60 + 'px');
+            $('.banner_img').css('transform', 'translate(0%, '+ st * 0.60 + 'px');
 
         $('header[id], .sec_content[id]').each(function () {
             var id = $(this).attr("id");
-            if($(this).offset().top-50 < $(window).scrollTop()){
+            if($(this).offset().top-100 < $(window).scrollTop()){
                 $('.nav_menu li a[href="#'+id+'"]').parent().addClass('active').siblings().removeClass('active');
 
             }
