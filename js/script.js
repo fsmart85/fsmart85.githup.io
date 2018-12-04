@@ -42,11 +42,11 @@ $(function () {
 
     $(window).scroll(function () {
         if($(window).scrollTop() > 100){
-            $('.btn_Up').addClass('active')
-            $('.nav_top').addClass('fixed')
+            $('.btn_Up').addClass('active');
+            $('.nav_top').addClass('fixed');
         }else {
             $('.btn_Up').removeClass('active');
-            $('.nav_top').removeClass('fixed')
+            $('.nav_top').removeClass('fixed');
         }
 
         var st = $(window).scrollTop();
@@ -54,7 +54,7 @@ $(function () {
 
         $('header[id], .sec_content[id]').each(function () {
             var id = $(this).attr("id");
-            if($(this).offset().top-100 < $(window).scrollTop()){
+            if($(this).offset().top-200 < $(window).scrollTop()){
                 $('.nav_menu li a[href="#'+id+'"]').parent().addClass('active').siblings().removeClass('active');
 
             }
