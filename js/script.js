@@ -33,7 +33,7 @@ $(function () {
     $('.btn_submit').on('click', function () {
         $('input:not(input.btn_submit), textarea').val("");
         alert("Ваше сообщение не отправлено!" +
-            " Отправте по email или звоните.");
+            " Отправте сообщение через Telegram.");
     });
 
     $('input:not(input.btn_submit), textarea').on('focus', function () {
