@@ -406,6 +406,14 @@ section #folio {
   overflow: hidden;
 }
 
+section #folio .container .wp .item_sm {
+  padding-left: 0;
+}
+
+section #folio .container .wp .item_sm .item_sm_info {
+  width: 100%;
+}
+
 section #folio .container .wp .item_sm .item_sm_info .info_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,19 +421,15 @@ section #folio .container .wp .item_sm .item_sm_info .info_box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin: 30px 0;
 }
 
 section #folio .container .wp .item_sm .item_sm_info .info_box img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-size: cover;
   border-radius: 50%;
-  margin: 10px 0;
+  margin-right: 10px;
 }
 
 section #folio .container .wp .item_lg .folioImg .imgBox {
@@ -438,6 +442,13 @@ section #folio .container .wp .item_lg .folioImg .imgBox {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+}
+
+section #folio .container .wp .item_lg .folioImg .imgBox:hover img {
+  -webkit-transition: 15s;
+  transition: 15s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 section #folio .container .wp .item_lg .folioImg .imgBox:hover .imgBox_title {
@@ -817,6 +828,10 @@ footer .container .wp .theme h5 span {
 }
 
 @media only screen and (max-width: 1200px) {
+  .telegram {
+    opacity: .7;
+  }
+
   .sec_content {
     padding-top: 40px;
     padding-bottom: 20px;
@@ -852,10 +867,18 @@ footer .container .wp .theme h5 span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   section #folio .container .wp .item_sm .item_sm_info .info_box {
-    margin: 0 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    width: 33%;
   }
 
   section .contact .container .wp .item_lg .wp {
@@ -871,6 +894,16 @@ footer .container .wp .theme h5 span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  section #folio .container .wp .item_sm .item_sm_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  section #folio .container .wp .item_sm .item_sm_info .info_box {
+    margin: 0 30px;
   }
 
   section #folio .container .wp .item_lg .folioImg .img_list {
@@ -1046,12 +1079,6 @@ footer .container .wp .theme h5 span {
             filter: brightness(0.7);
   }
 
-  section #folio .container .wp .item_sm .item_sm_info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
   section #folio .container .wp .item_sm .item_sm_info .info_box {
     margin: 0 10px;
   }
@@ -1151,10 +1178,14 @@ footer .container .wp .theme h5 span {
     font-size: 20px;
   }
 
+  section #folio .container .wp .item_sm {
+    padding: 0;
+  }
+
   section #folio .container .wp .item_sm .item_sm_info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1162,6 +1193,7 @@ footer .container .wp .theme h5 span {
   }
 
   section #folio .container .wp .item_sm .item_sm_info .info_box {
+    width: 100%;
     margin: 10px 0;
   }
 
@@ -1195,5 +1227,12 @@ footer .container .wp .theme h5 span {
   footer .container .wp .developer {
     width: 100%;
     text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .telegram a h6 {
+    display: none;
   }
 }
