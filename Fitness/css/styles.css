@@ -1,0 +1,1603 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+a:hover {
+  color: #fff;
+}
+
+p {
+  margin: 0;
+  color: #c7c2c2;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 27px;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.btn_Get {
+  text-transform: uppercase;
+  color: #fff;
+  background: #fa7c30;
+  padding: 10px 30px;
+  border-color: transparent;
+  font-weight: 600;
+  font-size: 0.8em;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 1px;
+}
+
+.btn_Get:hover {
+  background: #f96b15;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn_Up {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  bottom: -10%;
+  right: 10%;
+  background: #ccc;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+  z-index: 99;
+}
+
+.btn_Up .fa-angle-up {
+  padding: 8px;
+  font-size: 25px;
+  color: #fa7c30;
+}
+
+.btn_Up.active {
+  bottom: 10%;
+}
+
+.header {
+  width: 100%;
+  height: 90vh;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3))), url("../img/banner.png") no-repeat top center;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3)), url("../img/banner.png") no-repeat top center;
+  background-size: cover;
+  position: relative;
+}
+
+.header .nav_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.header .nav_top .nav_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav_top .nav_left .logo a h2 {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.header .nav_top .nav_left .logo a h2 span {
+  color: #fa7c30;
+}
+
+.header .nav_top .nav_left .nav_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 25px;
+}
+
+.header .nav_top .nav_left .nav_menu li {
+  margin: 0 12px;
+}
+
+.header .nav_top .nav_left .nav_menu li:hover a {
+  color: #fa7c30;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .nav_top .nav_left .burger {
+  display: none;
+}
+
+.header .nav_top .nav_left .burger .fa {
+  color: #fff;
+  font-size: 25px;
+}
+
+.header .nav_top .nav_right .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .nav_top .nav_right .login li {
+  margin-right: 10px;
+}
+
+.header .nav_top .nav_right .login li a {
+  border: 1px solid transparent;
+  padding: 8px 15px;
+}
+
+.header .nav_top .nav_right .login li:hover a {
+  color: #fa7c30;
+}
+
+.header .nav_top .nav_right .login li:last-child a {
+  border: 1px solid #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .nav_top .nav_right .login li:last-child:hover a {
+  border: 1px solid #fa7c30;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .nav_top .nav_right .mobile_login {
+  display: none;
+}
+
+.header .nav_top .nav_right .mobile_login .fas {
+  color: #fff;
+  font-size: 25px;
+}
+
+.header .container {
+  position: relative;
+  height: 1025px;
+}
+
+.header .container .head_title {
+  height: 100%;
+  padding: 100px 0;
+}
+
+.header .container .head_title h1 {
+  width: 500px;
+  color: #fff;
+  font-size: 55px;
+  margin-bottom: 30px;
+}
+
+.header .container .head_title h1 span {
+  color: #fa7c30;
+}
+
+.header .container .head_title p {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.header .container .booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1110px;
+  height: 520px;
+  background: #fff;
+  position: absolute;
+  top: 500px;
+  left: 0;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header .container .booking .book_bg {
+  width: 350px;
+}
+
+.header .container .booking .book_content {
+  width: 760px;
+  padding: 50px;
+  text-align: center;
+}
+
+.header .container .booking .book_content h4,
+.header .container .booking .book_content h3 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.header .container .booking .book_content h3 {
+  font-size: 35px;
+}
+
+.header .container .booking .book_content .forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 70px 0;
+}
+
+.header .container .booking .book_content .forms .form1,
+.header .container .booking .book_content .forms .form2,
+.header .container .booking .book_content .forms .form3 {
+  margin: 10px;
+}
+
+.header .container .booking .book_content .forms .form1 input,
+.header .container .booking .book_content .forms .form2 input,
+.header .container .booking .book_content .forms .form3 input,
+.header .container .booking .book_content .forms .form1 select,
+.header .container .booking .book_content .forms .form2 select,
+.header .container .booking .book_content .forms .form3 select {
+  width: 170px;
+  height: 22px;
+  margin: 15px 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #161418;
+  color: #5b5a5d;
+}
+
+.header .container .booking .book_content .forms .form1 input,
+.header .container .booking .book_content .forms .form2 input,
+.header .container .booking .book_content .forms .form3 input {
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.header .container .booking .book_content .forms .form1 select,
+.header .container .booking .book_content .forms .form2 select,
+.header .container .booking .book_content .forms .form3 select {
+  color: #5b5a5d;
+  font-size: 14px;
+}
+
+.header .container .booking .book_content .forms .form1 select option,
+.header .container .booking .book_content .forms .form2 select option,
+.header .container .booking .book_content .forms .form3 select option {
+  color: #5b5a5d;
+  font-size: 14px;
+  outline: none;
+  border: none;
+}
+
+.header .container .booking .book_content .forms .form1 select option::value,
+.header .container .booking .book_content .forms .form2 select option::value,
+.header .container .booking .book_content .forms .form3 select option::value {
+  color: #5b5a5d;
+  font-size: 14px;
+}
+
+.header .container .booking .book_content .forms .form1 input::-webkit-input-placeholder,
+.header .container .booking .book_content .forms .form2 input::-webkit-input-placeholder,
+.header .container .booking .book_content .forms .form3 input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #5b5a5d;
+}
+
+.header .container .booking .book_content .forms .form1 input::-ms-input-placeholder,
+.header .container .booking .book_content .forms .form2 input::-ms-input-placeholder,
+.header .container .booking .book_content .forms .form3 input::-ms-input-placeholder {
+  font-size: 14px;
+  color: #5b5a5d;
+}
+
+.header .container .booking .book_content .forms .form1 input::placeholder,
+.header .container .booking .book_content .forms .form2 input::placeholder,
+.header .container .booking .book_content .forms .form3 input::placeholder {
+  font-size: 14px;
+  color: #5b5a5d;
+}
+
+.header .modal-box,
+.header .modal-box2 {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+.header .modal-box .modal-box2,
+.header .modal-box2 .modal-box2 {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.header .modal-box .modal-login,
+.header .modal-box2 .modal-login,
+.header .modal-box .modal-sign_up,
+.header .modal-box2 .modal-sign_up {
+  max-width: 500px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background: #fff;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  z-index: 20;
+}
+
+.header .modal-box .modal-login .modal-sign_up,
+.header .modal-box2 .modal-login .modal-sign_up,
+.header .modal-box .modal-sign_up .modal-sign_up,
+.header .modal-box2 .modal-sign_up .modal-sign_up {
+  height: 400px;
+}
+
+.header .modal-box .modal-login .header,
+.header .modal-box2 .modal-login .header,
+.header .modal-box .modal-sign_up .header,
+.header .modal-box2 .modal-sign_up .header {
+  background: #fa7c30;
+  height: 50px;
+  border-radius: 5px 5px 0 0;
+}
+
+.header .modal-box .modal-login .header h3,
+.header .modal-box2 .modal-login .header h3,
+.header .modal-box .modal-sign_up .header h3,
+.header .modal-box2 .modal-sign_up .header h3 {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.header .modal-box .modal-login .header .fa-times-circle,
+.header .modal-box2 .modal-login .header .fa-times-circle,
+.header .modal-box .modal-sign_up .header .fa-times-circle,
+.header .modal-box2 .modal-sign_up .header .fa-times-circle {
+  position: absolute;
+  top: -15px;
+  left: 510px;
+  right: 0;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.header .modal-box .modal-login .form_login,
+.header .modal-box2 .modal-login .form_login,
+.header .modal-box .modal-sign_up .form_login,
+.header .modal-box2 .modal-sign_up .form_login {
+  width: 80%;
+  height: 400px;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.header .modal-box .modal-login .form_login p,
+.header .modal-box2 .modal-login .form_login p,
+.header .modal-box .modal-sign_up .form_login p,
+.header .modal-box2 .modal-sign_up .form_login p {
+  margin: 15px 0;
+}
+
+.header .modal-box .modal-login .form_login p label,
+.header .modal-box2 .modal-login .form_login p label,
+.header .modal-box .modal-sign_up .form_login p label,
+.header .modal-box2 .modal-sign_up .form_login p label {
+  color: #000;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.header .modal-box .modal-login .form_login p input,
+.header .modal-box2 .modal-login .form_login p input,
+.header .modal-box .modal-sign_up .form_login p input,
+.header .modal-box2 .modal-sign_up .form_login p input {
+  width: 100%;
+  height: 40px;
+  margin: 5px 0;
+  border-radius: 7px;
+  outline: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.header .modal-box .modal-login .form_login p input:focus,
+.header .modal-box2 .modal-login .form_login p input:focus,
+.header .modal-box .modal-sign_up .form_login p input:focus,
+.header .modal-box2 .modal-sign_up .form_login p input:focus {
+  border: 1px solid #fa7c30;
+}
+
+.section .about {
+  padding: 400px 0 250px 0;
+  background: #f1f4f6;
+  overflow: hidden;
+}
+
+.section .about .container .wp .title {
+  padding: 10px 0;
+  width: 35%;
+}
+
+.section .about .container .wp .title h3 {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.section .about .container .wp .title h3 span {
+  color: #fa7c30;
+}
+
+.section .about .container .wp .title p {
+  padding-bottom: 30px;
+}
+
+.section .about .container .wp .title .bolt {
+  font-weight: bold;
+  color: #000;
+}
+
+.section .about .container .wp .img {
+  width: 65%;
+  height: 500px;
+  position: relative;
+}
+
+.section .about .container .wp .img .bg {
+  width: 700px;
+  height: 100%;
+  position: absolute;
+  top: -90px;
+  right: -120px;
+}
+
+.section .about .container .wp .img .bg img {
+  width: 100%;
+}
+
+.section .programm {
+  padding: 100px 0;
+}
+
+.section .programm .container .prog_title {
+  width: 600px;
+}
+
+.section .programm .container .prog_title h3 {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.section .programm .container .prog_title h3 span {
+  color: #fa7c30;
+}
+
+.section .programm .container .prog_title p {
+  color: #161418;
+}
+
+.section .programm .container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 50px;
+}
+
+.section .programm .container .cards .card {
+  width: 350px;
+  height: 695px;
+  background: #f1f4f6;
+  border: none;
+}
+
+.section .programm .container .cards .card .card_img {
+  max-height: 397px;
+}
+
+.section .programm .container .cards .card .card_title {
+  min-height: 297px;
+  padding: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.section .programm .container .cards .card .card_title h4 {
+  font-size: 25px;
+  text-transform: none;
+  padding-bottom: 30px;
+  color: #161418;
+}
+
+.section .programm .container .cards .card .card_title p {
+  padding-bottom: 30px;
+  color: #161418;
+}
+
+.section .trainers-box .trainer-banner {
+  width: 100vw;
+  height: 590px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3))), url("../img/trainer_bg.png") no-repeat top center;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3)), url("../img/trainer_bg.png") no-repeat top center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section .trainers-box .trainer-banner .trainer-banner-title {
+  text-align: center;
+  margin: auto;
+}
+
+.section .trainers-box .trainer-banner .trainer-banner-title h4 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+}
+
+.section .trainers-box .trainer-banner .trainer-banner-title h2 {
+  color: #fff;
+  font-size: 75px;
+  letter-spacing: 4px;
+  padding-bottom: 30px;
+}
+
+.section .trainers-box .trainers {
+  background: #f1f4f6;
+  padding: 80px 0;
+}
+
+.section .trainers-box .trainers .container .trainer_title h3 {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.section .trainers-box .trainers .container .trainer_title h3 span {
+  color: #fa7c30;
+}
+
+.section .trainers-box .trainers .container .trainer_title p {
+  color: #161418;
+}
+
+.section .trainers-box .trainers .container .wp {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section .trainers-box .trainers .container .wp .item {
+  max-width: 332px;
+  height: 560px;
+}
+
+.section .trainers-box .trainers .container .wp .item .portret {
+  height: 388px;
+}
+
+.section .trainers-box .trainers .container .wp .item .trainer_name {
+  text-align: center;
+}
+
+.section .trainers-box .trainers .container .wp .item .trainer_name h5 {
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.section .trainers-box .trainers .container .wp .item .trainer_name h6 {
+  font-size: 12px;
+  color: #fa7c30;
+  font-weight: 700;
+  letter-spacing: normal;
+  padding-bottom: 30px;
+}
+
+.section .trainers-box .trainers .container .wp .item .trainer_name p {
+  color: #161418;
+}
+
+.section .contact .wp {
+  width: 100%;
+}
+
+.section .contact .wp .img_box {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section .contact .wp .img_box .box1,
+.section .contact .wp .img_box .box2 {
+  width: 100%;
+  height: 435px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3))), url("../img/contact1.png") no-repeat top center;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3)), url("../img/contact1.png") no-repeat top center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section .contact .wp .img_box .box1 .title,
+.section .contact .wp .img_box .box2 .title {
+  margin: auto;
+  text-align: center;
+}
+
+.section .contact .wp .img_box .box1 .title h6,
+.section .contact .wp .img_box .box2 .title h6,
+.section .contact .wp .img_box .box1 .title h3,
+.section .contact .wp .img_box .box2 .title h3 {
+  color: #fff;
+  padding: 15px 0;
+  font-size: 18px;
+}
+
+.section .contact .wp .img_box .box1 .title h3,
+.section .contact .wp .img_box .box2 .title h3 {
+  font-size: 45px;
+  padding-bottom: 30px;
+}
+
+.section .contact .wp .img_box .box2 {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3))), url("../img/contact2.png") no-repeat top center;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3)), url("../img/contact2.png") no-repeat top center;
+  background-size: cover;
+}
+
+.footer {
+  width: 100%;
+  min-height: 555px;
+  background: #161418;
+  padding: 65px 0;
+}
+
+.footer .container .wp {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer .container .wp .box_left {
+  margin-right: 25px;
+}
+
+.footer .container .wp .box_left .about_fitness {
+  max-width: 430px;
+  min-height: 360px;
+}
+
+.footer .container .wp .box_left .about_fitness .logo a h2 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.footer .container .wp .box_left .about_fitness .logo a h2 span {
+  color: #fa7c30;
+}
+
+.footer .container .wp .box_left .about_fitness p {
+  padding: 20px 0;
+  color: #c7c2c2;
+}
+
+.footer .container .wp .box_left .about_fitness .social_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.footer .container .wp .box_left .about_fitness .social_icons p {
+  color: #fff;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+.footer .container .wp .box_left .about_fitness .social_icons .icons {
+  padding-left: 10px;
+  cursor: default;
+}
+
+.footer .container .wp .box_left .about_fitness .social_icons .icons a .fab {
+  padding: 6px;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.footer .container .wp .box_left .about_fitness .social_icons .icons a:hover .fab {
+  color: #fa7c30;
+}
+
+.footer .container .wp .box_left .about_fitness input {
+  height: 40px;
+}
+
+.footer .container .wp .box_left .about_fitness .your_mail {
+  width: 230px;
+  padding: 10px;
+  outline: none;
+}
+
+.footer .container .wp .box_left .about_fitness .subscribe {
+  width: 150px;
+  color: #fff;
+  background: #fa7c30;
+  text-transform: uppercase;
+  border-color: transparent;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+  letter-spacing: 1px;
+}
+
+.footer .container .wp .box_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .container .wp .box_right .blogs {
+  width: 335px;
+  height: 360px;
+  margin-right: 25px;
+}
+
+.footer .container .wp .box_right .blogs h5 {
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+  padding-bottom: 15px;
+  letter-spacing: normal;
+}
+
+.footer .container .wp .box_right .blogs .blog_items .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  margin: 20px 0;
+}
+
+.footer .container .wp .box_right .blogs .blog_items .item:hover p {
+  color: #fa7c30;
+}
+
+.footer .container .wp .box_right .blogs .blog_items .item img {
+  width: 120px;
+  height: 80px;
+}
+
+.footer .container .wp .box_right .blogs .blog_items .item p {
+  text-transform: none;
+  font-size: 13px;
+  padding-left: 20px;
+  line-height: normal;
+  font-weight: normal;
+}
+
+.footer .container .wp .box_right .istagram {
+  width: 265px;
+  height: 360px;
+}
+
+.footer .container .wp .box_right .istagram h5 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  padding-bottom: 30px;
+  letter-spacing: normal;
+}
+
+.footer .container .wp .box_right .istagram .img_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.footer .container .wp .box_right .istagram .img_box li {
+  width: 83px;
+  height: 83px;
+  margin: 1.5px;
+}
+
+.footer .container .wp .box_right .istagram .more {
+  text-transform: none;
+  font-size: 12px;
+  letter-spacing: normal;
+  font-weight: normal;
+  padding-left: 10px;
+}
+
+.footer .container .wp .box_right .istagram .more:hover {
+  color: #fa7c30;
+}
+
+.footer .container .copyright {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.footer .container .copyright p {
+  color: #fa7c30;
+}
+
+@media only screen and (max-width: 1140px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .header .nav_top .nav_left .nav_menu {
+    margin-left: 15px;
+  }
+
+  .header .nav_top .nav_left .nav_menu li {
+    margin: 0 8px;
+  }
+
+  .header .nav_top .nav_right .login li {
+    margin-right: 0;
+  }
+
+  .header .container .booking {
+    width: 100%;
+    height: 520px;
+  }
+
+  .header .container .booking .book_bg {
+    height: 100%;
+  }
+
+  .header .container .booking .book_bg img {
+    height: 100%;
+  }
+
+  .header .container .booking .book_content {
+    width: 760px;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .header .container .booking .book_content h4,
+  .header .container .booking .book_content h3 {
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .header .container .booking .book_content h3 {
+    font-size: 35px;
+  }
+
+  .header .container .booking .book_content .forms {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 70px 0;
+  }
+
+  .header .container .booking .book_content .forms .form1,
+  .header .container .booking .book_content .forms .form2,
+  .header .container .booking .book_content .forms .form3 {
+    margin: 10px;
+  }
+
+  .header .container .booking .book_content .forms .form1 input,
+  .header .container .booking .book_content .forms .form2 input,
+  .header .container .booking .book_content .forms .form3 input,
+  .header .container .booking .book_content .forms .form1 select,
+  .header .container .booking .book_content .forms .form2 select,
+  .header .container .booking .book_content .forms .form3 select {
+    width: 170px;
+    height: 22px;
+    margin: 15px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #161418;
+    color: #5b5a5d;
+  }
+
+  .header .container .booking .book_content .forms .form1 input,
+  .header .container .booking .book_content .forms .form2 input,
+  .header .container .booking .book_content .forms .form3 input {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+
+  .header .container .booking .book_content .forms .form1 select,
+  .header .container .booking .book_content .forms .form2 select,
+  .header .container .booking .book_content .forms .form3 select {
+    color: #5b5a5d;
+    font-size: 14px;
+  }
+
+  .header .container .booking .book_content .forms .form1 select option,
+  .header .container .booking .book_content .forms .form2 select option,
+  .header .container .booking .book_content .forms .form3 select option {
+    color: #5b5a5d;
+    font-size: 14px;
+    outline: none;
+    border: none;
+  }
+
+  .header .container .booking .book_content .forms .form1 select option::value,
+  .header .container .booking .book_content .forms .form2 select option::value,
+  .header .container .booking .book_content .forms .form3 select option::value {
+    color: #5b5a5d;
+    font-size: 14px;
+  }
+
+  .header .container .booking .book_content .forms .form1 input::-webkit-input-placeholder,
+  .header .container .booking .book_content .forms .form2 input::-webkit-input-placeholder,
+  .header .container .booking .book_content .forms .form3 input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #5b5a5d;
+  }
+
+  .header .container .booking .book_content .forms .form1 input::-ms-input-placeholder,
+  .header .container .booking .book_content .forms .form2 input::-ms-input-placeholder,
+  .header .container .booking .book_content .forms .form3 input::-ms-input-placeholder {
+    font-size: 14px;
+    color: #5b5a5d;
+  }
+
+  .header .container .booking .book_content .forms .form1 input::placeholder,
+  .header .container .booking .book_content .forms .form2 input::placeholder,
+  .header .container .booking .book_content .forms .form3 input::placeholder {
+    font-size: 14px;
+    color: #5b5a5d;
+  }
+
+  .section .about {
+    padding: 300px 0 0 0;
+  }
+
+  .section .about .container .wp .title {
+    width: 40%;
+  }
+
+  .section .about .container .wp .img {
+    width: 60%;
+    height: 100%;
+  }
+
+  .section .about .container .wp .img .bg {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    position: static;
+  }
+
+  .footer .container .wp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer .container .wp .box_left {
+    margin-bottom: 15px;
+  }
+
+  .footer .container .wp .box_left .about_fitness .social_icons .icons {
+    padding-left: 18px;
+  }
+
+  .footer .container .wp .box_right {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .header .nav_top .nav_left {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .header .nav_top .nav_left .nav_menu {
+    display: none;
+  }
+
+  .header .nav_top .nav_left .nav_menu.responsive {
+    display: block;
+    width: 100%;
+    height: 240px;
+    margin: 0 auto;
+    padding-left: 35px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 99;
+  }
+
+  .header .nav_top .nav_left .nav_menu.responsive li {
+    margin-top: 20px;
+  }
+
+  .header .nav_top .nav_left .nav_menu.responsive li a {
+    font-weight: bold;
+    color: #fff;
+    font-size: 17px;
+  }
+
+  .header .nav_top .nav_left .burger {
+    display: block;
+    padding: 0 25px;
+  }
+
+  .header .nav_top .nav_right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .header .nav_top .nav_right .login {
+    display: none;
+  }
+
+  .header .nav_top .nav_right .mobile_login {
+    display: block;
+  }
+
+  .header .container .booking {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .header .container .booking .book_bg {
+    display: none;
+  }
+
+  .section .about {
+    padding: 350px 0 0 0;
+  }
+
+  .section .about .container .wp .title {
+    width: 40%;
+  }
+
+  .section .about .container .wp .img {
+    width: 60%;
+    height: 100%;
+  }
+
+  .section .about .container .wp .img .bg {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    position: static;
+  }
+
+  .section .programm {
+    padding: 50px 0;
+  }
+
+  .section .programm .container .cards {
+    padding-top: 25px;
+  }
+
+  .section .programm .container .cards .card .card_title {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .header .nav_top .nav_left {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .header .nav_top .nav_left .nav_menu {
+    display: none;
+  }
+
+  .header .nav_top .nav_left .nav_menu.responsive {
+    display: block;
+    width: 100%;
+    height: 240px;
+    margin: 0 auto;
+    padding-left: 35px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 99;
+  }
+
+  .header .nav_top .nav_left .nav_menu.responsive li {
+    margin-top: 20px;
+  }
+
+  .header .nav_top .nav_left .nav_menu.responsive li a {
+    font-weight: bold;
+    color: #fff;
+    font-size: 17px;
+  }
+
+  .header .nav_top .nav_left .burger {
+    display: block;
+    padding: 0 25px;
+  }
+
+  .header .nav_top .nav_right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .header .nav_top .nav_right .login {
+    display: none;
+  }
+
+  .header .nav_top .nav_right .mobile_login {
+    display: block;
+  }
+
+  .header .container .booking {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .header .container .booking .book_bg {
+    display: none;
+  }
+
+  .header .container .booking .book_content {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .header .container .booking .book_content .forms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .header .container .booking .book_content .forms .form1 input,
+  .header .container .booking .book_content .forms .form2 input,
+  .header .container .booking .book_content .forms .form3 input,
+  .header .container .booking .book_content .forms .form1 select,
+  .header .container .booking .book_content .forms .form2 select,
+  .header .container .booking .book_content .forms .form3 select {
+    margin: 15px 25px;
+  }
+
+  .header .modal-box .modal-login,
+  .header .modal-box2 .modal-login,
+  .header .modal-box .modal-sign_up,
+  .header .modal-box2 .modal-sign_up {
+    width: 300px;
+    height: 400px;
+  }
+
+  .header .modal-box .modal-login .header .fa-times-circle,
+  .header .modal-box2 .modal-login .header .fa-times-circle,
+  .header .modal-box .modal-sign_up .header .fa-times-circle,
+  .header .modal-box2 .modal-sign_up .header .fa-times-circle {
+    left: 310px;
+  }
+
+  .section .about {
+    padding: 350px 0 0 0;
+  }
+
+  .section .about .container .wp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .section .about .container .wp .title {
+    width: 100%;
+  }
+
+  .section .about .container .wp .img {
+    width: 100%;
+  }
+
+  .section .programm {
+    padding: 50px 0;
+  }
+
+  .section .programm .container .prog_title {
+    max-width: 400px;
+  }
+
+  .section .programm .container .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .section .programm .container .cards .card {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .section .programm .container .cards .card .card_img {
+    height: 397px;
+    overflow: hidden;
+  }
+
+  .section .programm .container .cards .card .card_title {
+    padding: 20px;
+  }
+
+  .section .programm .container .cards .card .card_title h4 {
+    padding-bottom: 10px;
+  }
+
+  .section .programm .container .cards .card .card_title p {
+    padding-bottom: 10px;
+  }
+
+  .section .trainers-box .trainers {
+    padding: 50px 0 20px 0;
+  }
+
+  .section .trainers-box .trainers .container .wp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .section .trainers-box .trainers .container .wp .item {
+    margin-bottom: 30px;
+  }
+
+  .section .contact .wp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .section .contact .wp .img_box {
+    width: 100%;
+  }
+
+  .footer {
+    padding: 25px 0;
+  }
+
+  .footer .container .wp .box_left {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+
+  .footer .container .wp .box_right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer .container .wp .box_right .blogs {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .header .container .head_title {
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
+  }
+
+  .header .container .head_title h1 {
+    width: 300px;
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .header .container .head_title p {
+    margin-bottom: 10px;
+  }
+
+  .header .container .booking {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 600px;
+  }
+
+  .header .container .booking .book_content {
+    padding: 15px;
+  }
+
+  .header .container .booking .book_content .forms {
+    padding: 10px 0;
+  }
+
+  .header .modal-box .modal-login,
+  .header .modal-box2 .modal-login,
+  .header .modal-box .modal-sign_up,
+  .header .modal-box2 .modal-sign_up {
+    width: 280px;
+  }
+
+  .header .modal-box .modal-login .header .fa-times-circle,
+  .header .modal-box2 .modal-login .header .fa-times-circle,
+  .header .modal-box .modal-sign_up .header .fa-times-circle,
+  .header .modal-box2 .modal-sign_up .header .fa-times-circle {
+    position: absolute;
+    top: -35px;
+    left: 250px;
+  }
+
+  .section .about {
+    padding: 450px 0 0 0;
+  }
+
+  .section .about .container .wp {
+    text-align: center;
+  }
+
+  .section .programm {
+    padding: 50px 0;
+  }
+
+  .section .programm .container .prog_title {
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .section .programm .container .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .section .programm .container .cards .card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .section .programm .container .cards .card .card_title {
+    padding: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+
+  .section .trainers-box {
+    overflow: hidden;
+  }
+
+  .section .trainers-box .trainer-banner {
+    width: 100%;
+    min-height: 590px;
+  }
+
+  .section .trainers-box .trainer-banner .trainer-banner-title {
+    text-align: center;
+    margin: auto;
+  }
+
+  .section .trainers-box .trainer-banner .trainer-banner-title h4 {
+    font-size: 25px;
+  }
+
+  .section .trainers-box .trainer-banner .trainer-banner-title h2 {
+    font-size: 45px;
+  }
+
+  .section .trainers-box .trainers .container .trainer_title {
+    text-align: center;
+  }
+
+  .section .trainers-box .trainers .container .trainer_title .wp .item {
+    width: 300px;
+  }
+
+  .section .trainers-box .trainers .container .trainer_title .wp .item .trainer_name {
+    padding: 0 10px;
+  }
+
+  .footer .container .wp .box_left {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer .container .wp .box_left .about_fitness {
+    width: 300px;
+    padding: 0 10px;
+  }
+
+  .footer .container .wp .box_left .about_fitness p {
+    text-align: left;
+  }
+
+  .footer .container .wp .box_left .about_fitness .social_icons .icons {
+    padding-left: 15px;
+  }
+
+  .footer .container .wp .box_left .about_fitness .social_icons .icons a .fab {
+    padding: 3px;
+    font-size: 14px;
+  }
+
+  .footer .container .wp .box_left .about_fitness .your_mail {
+    width: 180px;
+  }
+
+  .footer .container .wp .box_left .about_fitness .subscribe {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .footer .container .wp .box_right .blogs {
+    width: 300px;
+    padding: 0 10px;
+  }
+
+  .footer .container .wp .box_right .blogs h5 {
+    text-align: center;
+    padding: 8px 0;
+  }
+
+  .footer .container .wp .box_right .istagram h5 {
+    text-align: center;
+  }
+
+  .footer .container .wp .box_right .istagram .more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
