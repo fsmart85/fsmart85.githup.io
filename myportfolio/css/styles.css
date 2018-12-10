@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h2 {
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+.header {
+  height: 100vh;
+  background: url("../img/nature-1532156577433-5816.jpg") top center;
+  background-size: cover;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 87%, 50% 100%, 0 87%);
+          clip-path: polygon(0% 0%, 100% 0, 100% 87%, 50% 100%, 0 87%);
+}
+
+.header .top-menu {
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.header .top-menu .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .top-menu .container .menu-contact .phone .fas,
+.header .top-menu .container .menu-contact .email .fas,
+.header .top-menu .container .menu-contact .phone span,
+.header .top-menu .container .menu-contact .email span {
+  color: #fff;
+  margin-right: 15px;
+}
+
+.header .top-menu .container .menu-contact .phone .fa-mobile-alt,
+.header .top-menu .container .menu-contact .email .fa-mobile-alt {
+  margin-right: 20px;
+}
+
+.header .top-menu .container .navbar {
+  background: transparent !important;
+}
+
+.header .top-menu .container .navbar .navbar-toggler .navbar-toggler-icon {
+  color: #fff;
+  font-weight: bold;
+}
+
+.header .top-menu .container .navbar .collapse .navbar-nav .nav-item {
+  margin-left: 8px;
+}
+
+.header .top-menu .container .navbar .collapse .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  font-size: 18px;
+}
+
+.header .mycard {
+  width: 350px;
+  margin: auto;
+  text-align: center;
+  padding-top: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+.header .mycard .myphoto {
+  margin: 0 auto;
+}
+
+.header .mycard .myphoto img {
+  background-position: center;
+  background-size: cover;
+  width: 150px;
+  height: 195px;
+  -webkit-clip-path: circle(43% at 50% 45%);
+          clip-path: circle(43% at 50% 45%);
+}
+
+.header .mycard h1 {
+  color: #495057;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+.header .mycard p {
+  color: #2e3133;
+  padding-bottom: 10px;
+}
+
+.header .mycard .menu-socioal a .fab {
+  font-size: 25px;
+  color: #495057;
+  margin: 0 10px;
+}
+
+.header .mycard .menu-socioal a .fab:hover {
+  background: #0056b3;
+  color: #fff;
+}
+
+.header .mycard .btn {
+  margin: 10px 0;
+  width: 80%;
+}
+
+.section .myworks {
+  height: 700px;
+  overflow: hidden;
+}
+
+.section .myworks .container .accardion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .myworks .container .accardion:hover li:nth-child(3) {
+  width: 200px;
+}
+
+.section .myworks .container .accardion li {
+  width: 200px;
+  height: 600px;
+  overflow: hidden;
+  padding: 1px 1px 0;
+  cursor: pointer;
+  display: block;
+  -webkit-box-shadow: 1px 3px 15px #7e807e;
+          box-shadow: 1px 3px 15px #7e807e;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+.section .myworks .container .accardion li:hover {
+  -webkit-box-shadow: 1px 3px 15px #36c5fa;
+          box-shadow: 1px 3px 15px #36c5fa;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  width: 100%;
+}
+
+.section .myworks .container .accardion li:nth-child(3) {
+  width: 1200px;
+}
+
+/*.section .myworks .container .accardion li:hover li:nth-child(3) {
+  width: 500px;
+}*/
+
+.section .container .resyume {
+  height: 100vh;
+  width: 100%;
+
+}
+.section .container .resyume .resyumeImg{
+   text-align: center;
+}
+.section .container .resyume .resyumeImg img{
+  width: 60%;
+ -webkit-background-size: cover;
+  background-size: cover;
+ }
+
+.section .container .about .web .owl-carousel .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section .container .about .web .owl-carousel .item .itemImg {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+}
+
+.section .container .about .web .owl-carousel .item .itemImg img {
+  width: 100%;
+  background-size: cover;
+}
+
+.section .container .about .sertifikat img {
+  max-width: 100%;
+}
+
+.section .forms {
+  padding: 30px 0;
+  height: 100vh;
+  background: url("../img/slide-bg-03.jpg") center / cover;
+}
+
+.section .forms .container h3 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.section .forms .container form {
+  padding: 20px 0;
+}
+
+.section .forms .container form .form {
+  text-align: center;
+}
+
+.section .forms .container form .form .form-group {
+  margin: 0 auto;
+  width: 50%;
+  padding: 15px 0;
+}
+
+.section .forms .container form .form .form-group .form-control {
+  height: 50px;
+}
+
+.section .forms .container form .form .form-group:nth-child(3) .form-control {
+  height: 200px;
+}
+
+.section .forms .container form .form .btn {
+  width: 30%;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.footer {
+  background: #000;
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .container .top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .container .top-menu .menu-socioal {
+  width: 33%;
+}
+
+.footer .container .top-menu .menu-link {
+  width: 33%;
+}
+
+.footer .container .top-menu .menu-link ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .container .top-menu .menu-link ul li {
+  margin-left: 10px;
+}
+
+.footer .container .top-menu .menu-link ul li a {
+  color: #fff;
+}
+
+.footer .container .top-menu .mycard {
+  width: 33%;
+  text-align: center;
+}
+
+.footer .container .top-menu .mycard h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.footer .container .top-menu .mycard p {
+  color: #fff;
+  padding-top: 10px;
+}
