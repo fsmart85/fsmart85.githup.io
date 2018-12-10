@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  position: relative;
+}
+
+header .container .navbar {
+  z-index: 9999;
+  background: transparent;
+}
+
+header .container .navbar .navbar-brand {
+  -webkit-box-flex: initial;
+      -ms-flex-positive: initial;
+          flex-grow: initial;
+}
+
+header .container .navbar .navbar-brand img {
+  width: 100px;
+  height: auto;
+}
+
+header .container .navbar .collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.top_content {
+  background: url(../img/yzbekistan.jpg) no-repeat center;
+  background-size: cover;
+  height: 800px;
+}
+
+.top_content .top-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  right: 60%;
+}
+
+.top_content .top-title img {
+  width: 200px;
+  height: auto;
+}
+
+.section-about .container .article .block-about .col-md-12 {
+  background: grey;
+}
+
+.section-about .container .article .block-about .col-md-12 .row .Imgblock {
+  width: 40%;
+  border: 1px solid #000;
+}
+
+.section-about .container .article .block-about .col-md-12 .row .Imgblock img {
+  background-size: contain;
+  width: 445px;
+  height: 260px;
+}
+
+.section-about .container .article .block-about .col-md-12 .row .card-title {
+  width: 60%;
+}
