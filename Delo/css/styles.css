@@ -61,6 +61,7 @@ li {
   max-width: 1000px;
   margin: 0 auto;
   background-image: url("../img/cont_bg.png") repeat-y;  
+  background-size: cover;
 }
 
 .container .header {
