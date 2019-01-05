@@ -60,7 +60,7 @@ li {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  background: url("../img/cont_bg.png") repeat center center;
+  background: url("../img/cont_bg.png") no-repeat;
   background-size: cover;
   height: auto;
 }
